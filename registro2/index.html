@@ -14,7 +14,7 @@
 
   <div class="container">
     <main>
-      <form action="#" method="get" class="row mt-4 needs-validation" id="form" novalidate>
+      <form action="#" method="get" class="row mt-4 needs-validation " id="form" novalidate>
         <div class="col">
           <h1 class="mb-3">Registro</h1>
           <hr class="my-4">
@@ -45,7 +45,7 @@
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1" required>
+              <input type="password" class="form-control " id="password1"  onkeyup="checkPasswordMatch()" required>
               <div class="invalid-feedback">
                 Debe ingresar una contraseña de al menos 6 caracteres.
               </div>
@@ -53,20 +53,18 @@
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" required>
+              <input type="password" class="form-control" id="password2"   onkeyup="checkPasswordMatch()" required>
               <div class="invalid-feedback">
                 Debe ser igual a "contraseña".
               </div>
             </div>
 
             <div class="col-sm-12">
-              <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
+              <button id="btnfeed" type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
                 data-bs-target="#modalTerminos">Términos del servicio</button>
-              <div class="invalid-feedback">
-                Debe aceptar los términos del servicio.
-              </div>
+              <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
             </div>
-
+            
 
             <button class="btn btn-primary" type="submit" id="boton">Registrarme</button>
 
@@ -91,6 +89,10 @@
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" value="" id="terminos" required>
                   <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
+                  
+                    <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
+
+                  
                 </div>
               </div>
             </div>
