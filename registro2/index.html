@@ -45,7 +45,7 @@
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control " id="password1"  onkeyup="checkPasswordMatch()" required>
+              <input type="password" class="form-control " id="password1" onkeyup="checkPasswordMatch()" required>
               <div class="invalid-feedback">
                 Debe ingresar una contraseña de al menos 6 caracteres.
               </div>
@@ -53,18 +53,18 @@
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2"   onkeyup="checkPasswordMatch()" required>
+              <input type="password" class="form-control" id="password2" onkeyup="checkPasswordMatch()" required>
               <div class="invalid-feedback">
                 Debe ser igual a "contraseña".
               </div>
             </div>
 
             <div class="col-sm-12">
-              <button id="btnfeed" type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
+              <button id="btnFeed" type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
                 data-bs-target="#modalTerminos">Términos del servicio</button>
               <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
             </div>
-            
+
 
             <button class="btn btn-primary" type="submit" id="boton">Registrarme</button>
 
@@ -76,7 +76,8 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5">Términos y condiciones del servicio.</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button id="btnFeed" type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi sapiente voluptatum
@@ -89,10 +90,10 @@
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" value="" id="terminos" required>
                   <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
-                  
-                    <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
 
-                  
+                  <div class="invalid-feedback">Debe aceptar los terminos y condiciones.</div>
+
+
                 </div>
               </div>
             </div>
@@ -104,7 +105,7 @@
         <p>Datos guardados correctamente</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-    
+
       <div class="alert alert-danger alert-dismissible fade" role="alert" id="alert-danger">
         <p>Los datos ingresados no cumplen con los requisitos solicitados</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
